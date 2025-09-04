@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="src/main.js" defer></script>
+  <link href="/src/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>امیرارسلان حبیب‌نژاد | توسعه دهنده فرانت‌اند</title>
+</head>
+
+<body class="min-h-screen bg-light-background dark:bg-dark-background">
+  <div class="min-w-80">
+    <header
+      class="sticky top-0 z-20 flex justify-between items-center py-[.2rem] border-b border-light-textSecondary dark:border-dark-textSecondary lg:px-12">
+      <button id="show-menu"
+        class="w-5 h-5 relative z-20 flex items-center justify-center text-light-text dark:text-dark-text md:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div id="show-menu-blur" class="hidden fixed inset-0 z-10 md:hidden"></div>
+      <nav
+        class="menu fixed top-0 bottom-0 right-0 translate-x-full z-20 content-center text-center transition-transform bg-white dark:bg-[#0F172A] rounded-l-lg p-4 md:static md:translate-x-0 md:bg-transparent">
+        <ul class="flex flex-col space-y-4 text-lg font-medium md:flex-row md:space-y-0 md:items-center md:gap-x-8">
+          <li id="home">
+            <a href="#home"
+              class="link text-gray-800 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+              خانه
+            </a>
+          </li>
+          <li id="about-me">
+            <a href="#about"
+              class="link text-gray-800 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+              درباره من
+            </a>
+          </li>
+          <li id="projects">
+            <a href="#projects"
+              class="link text-gray-800 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+              پروژه‌ها
+            </a>
+          </li>
+          <li id="contact-me">
+            <a href="#contact"
+              class="link text-gray-800 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+              ارتباط با من
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="theme-toggle"
+        class="w-16 h-8 bg-light-primary dark:bg-dark-primary rounded-full flex items-center p-1 cursor-pointer transition-colors">
+        <div
+          class="toggle-ball w-6 h-6 translate-x-0 dark:-translate-x-full rounded-full bg-light-primary shadow-md flex items-center justify-center text-white transition-transform">
+          <span class="sun block dark:hidden">☀️</span>
+          <span class="moon hidden dark:block">🌙</span>
+        </div>
+      </div>
+      <div
+        class="rounded-full overflow-hidden w-11 h-11 border-2 border-light-textSecondary dark:border-dark-textSecondary ">
+        <img class="w-full h-full" src="Assets/Images/logo.jpg" alt="logo">
+      </div>
+    </header>
+
+    <main class="px-8 mt-16 lg:px-36">
+      <section id="home-section" data-aos="fade-up" class="flex flex-wrap text-center">
+        <div id="image-me"
+          class="w-60 h-60 mx-auto rounded-full overflow-hidden border-4 border-light-textSecondary dark:border-dark-textSecondary outline outline-4 outline-light-primary dark:outline-dark-primary outline-offset-8">
+          <img class="w-full h-full" src="Assets/Images/me-3.png" alt="image-me">
+        </div>
+        <div class="space-y-4 mx-auto mt-10">
+          <h2 class="text-3xl font-bold text-light-text dark:text-dark-text">سلام.</h2>
+          <h3 class="typing-effect text-2xl font-semibold text-light-primary dark:text-dark-primary"></h3>
+          <h1 class="text-4xl font-bold text-light-text dark:text-dark-text">توسعه دهنده <span
+              class="text-light-primary dark:text-dark-primary">فرانت‌اند.</span></h1>
+          <div>
+            <button class="text-white bg-bg-button active:bg-bg-active-button transition-colors rounded-[.5rem] py-[.1rem] px-4">ارتباط با من</button>
+          </div>  
+          <!-- <div
+            class="flex flex-wrap justify-center gap-x-4 text-light-textSecondary dark:text-dark-textSecondary dir-ltr">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Tailwind CSS</span>
+            <span>MUI</span>
+            <span>React.js</span>
+            <span>Git</span>
+            <span>GitHub</span>
+          </div>
+        </div> -->
+      </section>
+
+      <section id="about-me-section" data-aos="fade-up" class="space-y-4 mt-12">
+        <h2 class="text-3xl text-light-text dark:text-dark-text font-bold">درباره من</h2>
+        <p class="text-light-textSecondary">دانشجوی رشته کامپیوتر هستم ، علاقه ام به برنامه نویسی رو در دانشگاه پیدا
+          کردم ، با زبان های مختلفی مانند python ، c# و php کار کرده ام ، در نهایت جاوااسکریپت رو انتخاب کردم ، و
+          اکنون درحال یادگیری پیشرفته هستم.</p>
+      </section>
+
+      <section id="projects-section" data-aos="fade-up" class="mt-12">
+        <h2 class="text-3xl text-light-text dark:text-dark-text font-bold mb-12">پروژه‌ها</h2>
+        <div class="projects"></div>
+      </section>
+
+      <section id="contact-me-section" class="mt-12">
+        <h2 data-aos="fade-up" class="text-3xl text-light-text dark:text-dark-text font-bold">تماس با من</h2>
+        <div class="mt-10">
+          <div data-aos="fade-up" class="text-center space-y-4">
+            <h3 class="font-bold text-lg text-light-text dark:text-dark-text">بیایید صحبت کنیم</h3>
+            <p class="text-sm text-light-textSecondary dark:text-dark-textSecondary">اگر پروژه‌ای دارید یا می‌خواهید
+              درباره همکاری صحبت کنیم، خوشحال می‌شوم از شما بشنوم.</p>
+          </div>
+          <div class="contact-methods">
+            <div data-aos="fade-up"
+              class="bg-light-card dark:bg-dark-card text-center p-4 space-y-4 rounded-lg shadow-xl cursor-pointer">
+              <div
+                class="bg-light-primary dark:bg-dark-primary w-12 h-12 mx-auto flex items-center justify-center rounded-lg">
+                <img src="Assets/Icons/email-icon.svg" alt="email-icon">
+              </div>
+              <h4 class="font-semibold text-light-text dark:text-dark-text">ایمیل</h4>
+              <a href="mailto:amir1381nezhadhabib@gmail.com"
+                class="text-sm text-light-textSecondary dark:text-dark-textSecondary">amir1381nezhadhabib@gmail.com</a>
+            </div>
+
+            <div data-aos="fade-up"
+              class="bg-light-card dark:bg-dark-card text-center p-4 space-y-4 rounded-lg shadow-xl cursor-pointer">
+              <div
+                class="bg-light-primary dark:bg-dark-primary w-12 h-12 mx-auto flex items-center justify-center rounded-lg">
+                <img src="Assets/Icons/gitHub-icon.svg" alt="gitHub-icon">
+              </div>
+              <h4 class="font-semibold text-light-text dark:text-dark-text">گیت هاب</h4>
+              <a href="https://github.com/Aarsalan81"
+                class="text-sm text-light-textSecondary dark:text-dark-textSecondary">Aarsalan81</a>
+            </div>
+
+            <div data-aos="fade-up"
+              class="bg-light-card dark:bg-dark-card text-center p-4 space-y-4 rounded-lg shadow-xl cursor-pointer">
+              <div
+                class="bg-light-primary dark:bg-dark-primary w-12 h-12 mx-auto flex items-center justify-center rounded-lg">
+                <img src="Assets/Icons/cellPhone-icon.svg" alt="cellPhone-icon">
+              </div>
+              <h4 class="font-semibold text-light-text dark:text-dark-text">تلفن</h4>
+              <a href="tel:09362821560"
+                class="text-sm text-light-textSecondary dark:text-dark-textSecondary">09362821560</a>
+            </div>
+
+            <div data-aos="fade-up"
+              class="bg-light-card dark:bg-dark-card text-center p-4 space-y-4 rounded-lg shadow-xl cursor-pointer">
+              <div
+                class="bg-light-primary dark:bg-dark-primary w-12 h-12 mx-auto flex items-center justify-center rounded-lg">
+                <img src="Assets/Icons/location-icon.svg" alt="location-icon">
+              </div>
+              <h4 class="font-semibold text-light-text dark:text-dark-text">آدرس</h4>
+              <p class="text-sm text-light-textSecondary dark:text-dark-textSecondary">بجنورد، ایران</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-8 py-2 shadow-lg bg-light-card dark:bg-dark-card">
+      <p class="text-center text-light-text dark:text-dark-text">
+        ساخته شده توسط
+        <span class="text-light-primary dark:text-dark-primary">امیرارسلان حبیب‌نژاد</span>
+      </p>
+    </footer>
+
+  </div>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>
