@@ -26,6 +26,13 @@ export default {
         'dark-primaryHover': "#818CF8",
         'dark-success': "#10B981",
         'dark-warning': "#F59E0B",
+      },
+      boxShadow: {
+        'custom': '-1.5px 2.5px 3px rgb(101, 31, 255)'
+      },
+      screens: {
+        'xxs': '0px',
+        'xs': '400px'
       }
     },
   },
