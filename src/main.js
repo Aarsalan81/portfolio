@@ -1,5 +1,5 @@
-import nalingoImg from '../assets/images/nalingo.jpg'
-import cmsImg from '../assets/images/cms.jpg'
+import nalingoImg from '../Assets/Images/nalingo.jpg'
+import cmsImg from '../Assets/Images/cms.jpg'
 
 const myName = 'امیرارسلان حبیب‌نژاد هستم'
 const projects = [
