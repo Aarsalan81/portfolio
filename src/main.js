@@ -82,7 +82,7 @@ projects.forEach(proj => {
     })
     projectsContainer.insertAdjacentHTML('beforeend', `
         <div data-aos="fade-up" class="project relative rounded-lg shadow-xl overflow-hidden">
-            <img loading="lazy" src="${proj.img}" alt="image">
+            <img src="${proj.img}" alt="image">
             <div class="project-title">${proj.title}</div>
             <div class="filter-hover">
                 <p class="project-desc">
