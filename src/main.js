@@ -1,7 +1,10 @@
+import nalingoImg from '../assets/images/nalingo.jpg'
+import cmsImg from '../assets/images/cms.jpg'
+
 const myName = 'امیرارسلان حبیب‌نژاد هستم'
 const projects = [
-    { id: 1, title: 'وبسایت nalingo', description: 'وبسایت آموزش آنلاین زبان ،', img: 'assets/images/nalingo.jpg', link: 'https://nalingo.com', isOnline: true, tools: ['react', 'tailwind'] },
-    { id: 2, title: 'پنل مدیریت', description: 'پنل مدیریت آموزشگاه ،', img: 'assets/images/cms.jpg', link: 'https://github.com/Aarsalan81/school-management', isOnline: false, tools: ['react', 'MUI'] },
+    { id: 1, title: 'وبسایت nalingo', description: 'وبسایت آموزش آنلاین زبان ،', img: nalingoImg, link: 'https://nalingo.com', isOnline: true, tools: ['react', 'tailwind'] },
+    { id: 2, title: 'پنل مدیریت', description: 'پنل مدیریت آموزشگاه ،', img: cmsImg, link: 'https://github.com/Aarsalan81/school-management', isOnline: false, tools: ['react', 'MUI'] },
 ]
 const menuBtnsWrapper = document.querySelector('.menu-btns-wrapper')
 const showMenuBtn = document.getElementById('show-menu')
@@ -82,7 +85,7 @@ projects.forEach(proj => {
     })
     projectsContainer.insertAdjacentHTML('beforeend', `
         <div data-aos="fade-up" class="project relative rounded-lg shadow-xl overflow-hidden">
-            <img src="${proj.img}" alt="image">
+            <img loading="lazy" src="${proj.img}" alt="image">
             <div class="project-title">${proj.title}</div>
             <div class="filter-hover">
                 <p class="project-desc">
