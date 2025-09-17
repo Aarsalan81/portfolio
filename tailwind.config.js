@@ -28,7 +28,7 @@ export default {
         'dark-warning': "#F59E0B",
       },
       boxShadow: {
-        'custom': '-1.5px 2.5px 3px rgb(101, 31, 255)'
+        'custom': '-1.5px 1.5px 3px rgb(101, 31, 255)'
       },
       screens: {
         'xxs': '0px',
